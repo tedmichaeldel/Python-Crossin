@@ -34,7 +34,7 @@ while True:
         result.append(0)
     # 平均值，猜对所有次的总数除以result的和（猜对了几次），前面和转换到了float类型
     if sum(result) != 0:
-        avg = float(sum(right_times_in_one_round)) / sum(result)
+        avg = float(sum(right_times_in_one_round)) / float(sum(result))
         Round = len(result)
         print '已经猜了几轮：%d' % Round
         print '平均几次猜中：%.2f' % avg
